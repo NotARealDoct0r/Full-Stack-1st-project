@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/737ad124a7.js" crossorigin="anonymous"></script>
+    <title>Play2Learn</title>
+</head>
+<body>
+    <header>
+        <h1>Play2Learn</h1>
+        <a href="index.html">
+            <img src="images\ed2go_standard_sm.png" alt="ed2go">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a><strong> |</strong></li> 
+                <li><a class="dropdown" href="">Games <i class="fa-solid fa-caret-down"></i></a><strong> |</strong>        
+                    <ul class="dropdown-content">  
+                        <li><a href="games/anagram-hunt.html">Anagram Hunt</a></li>
+                        <li><a href="games/math-facts.html">Math Facts Practice</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a><strong> |</strong></li> 
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+        <hr>
+    <main>
+       <form id="login-form" action="javascript:alert('Form Submitted')">
+        <h2 id="log-in">Log in</h2>
+            <div>
+                <label for="login-email">Email:</label><br>
+                <input type="email" name="login-email" id="login-email">
+            </div>
+            <div>
+                <label for="password">Password:</label><br>
+                <input type="password" name="password" id="password">
+            </div>
+            <div>
+                <button id="login-button" type="submit">LOGIN</button><br><br>
+            </div>
+            <div>
+                <a href="#" id="need-account">Need an account? Register</a>
+            </div>
+        </form>
+        <form id="register-form" action="javascript:alert('Form Submitted')">
+            <h2 id="register">Register</h2>
+                <div>
+                    <label for="login-email">Email:</label><br>
+                    <input type="email" name="login-email" id="login-email">
+                </div>
+                <div>
+                    <label for="password">Password:</label><br>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div>
+                    <label for="repeat-password">Repeat Password:</label><br>
+                    <input type="password" name="repeat-password" id="repeat-password">
+                </div>
+                <div>
+                    <label for="hear-about-us">How did you hear about us?</label><br>
+                    <textarea name="hear-about-us" id="hear-about-us" style="height: 100px;"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" id="age-requirement" name="age-requirement">
+                    <label for="age-requirement">I am over 13 and like playing games</label>
+                </div>
+                <div>
+                    <button id="register-button" type="submit">REGISTER</button><br><br>
+                </div>
+                <div>
+                    <a href="#" id="have-account">Have an account? Log in</a>
+                </div>
+            </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+<footer>
+    <hr id="footer-line">
+    <p>&copy; 2024 Play2Learn</p>
+    <address>
+        <a href="contact-us.html">
+            <i class="fa-solid fa-square-envelope"></i></a>
+        <a href="https://instagram.com">
+            <i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com">
+            <i class="fa-brands fa-square-x-twitter"></i></a>
+        <a href="https://facebook.com">
+            <i class="fa-brands fa-square-facebook"></i></a>
+    </address>
+</footer>
+</html>

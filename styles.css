@@ -1,0 +1,326 @@
+img {
+  margin-top: 15px;
+  width: 150px;
+}
+
+h1, img, nav {
+  display: inline-block;
+}
+
+h1 {
+  padding-left: 15px;
+}
+
+nav {
+  float: right;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+
+nav ul li {
+  margin-top: 5px;
+  display: inline;
+  list-style-type: none;
+}
+
+nav a:hover {
+  color: black; 
+  font-weight: bold;
+}
+
+header nav ul li>ul {
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  flex-flow: column;
+}
+
+header nav ul li:hover>ul {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: white;
+  padding: 0;
+  margin-left: 30px;
+  box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+hr {
+  border: 0; 
+  height: 2px; 
+  background-color: black; 
+  width: 98%;
+  margin-top: -10px;
+}
+
+#happy-clients {
+  margin-top: 5%;
+  margin-left: 30%;
+}
+
+#quote {
+  font-style: italic;
+  font-size: large;
+  color: rgb(35, 203, 35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#author {
+  margin-left: 60%;
+  color: black;
+}
+
+.games {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 4rem 1fr;
+  margin: 5% 5%;
+  font-size: large;
+}
+
+.games section {
+  width: 70%;
+  margin: auto;
+}
+
+.games-button {
+  float: right;
+  margin-right: 10%;
+  border-radius: 5px;
+  background-color: rgb(14, 162, 14);
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#footer-line {
+  border: 0;
+  height: 2px;
+  background-color: black;
+  width: 60%;
+ }
+
+footer p {
+  margin-left: 21%;
+  margin-top: -5px;
+}
+
+address {
+  float: right;
+  margin-right: 20%;
+  margin-top: -30px;
+  font-size: 35px;
+}
+
+/* About Us */
+
+#about-us, #about-us1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto;
+}
+
+#about-us, #contact-us, #log-in, #register {
+  font-size: xx-large;
+}
+
+#about-us-p, #online-class {
+  margin: 0 20%;
+}
+
+#online-class {
+  width: 60%;
+}
+
+/* Contact Us */
+
+#contact-form {
+  width: 50%;
+  margin: auto;
+}
+
+#email, #subject, #message {
+  width: 95%;
+  margin: 5px auto;
+  border-width: 3px;
+  border-color: black;
+}
+
+#send {
+  float: right;
+  margin-right: 5%;
+  border-radius: 5px;
+  background-color: rgb(14, 162, 14);
+  color: white;
+  cursor: pointer;
+}
+
+/* Log in + Register */
+
+#login-form, #register-form {
+  margin-left: 25%;
+}
+
+#login-email, #password, #repeat-password, 
+#hear-about-us {
+  width: 300px;
+  margin: 5px auto;
+  border-width: 3px;
+  border-color: black;
+}
+
+#login-button {
+  margin-left: 245px; 
+  margin-top: 5px;
+  border-radius: 5px;
+  background-color: rgb(14, 162, 14);
+  color: white;
+  cursor: pointer;
+}
+
+#register-button {
+  margin-left: 218px; 
+  margin-top: 5px;
+  border-radius: 5px;
+  background-color: rgb(14, 162, 14);
+  color: white;
+  cursor: pointer;
+}
+
+#need-account, #have-account {
+  margin-left: 50px;
+}
+
+#register-form {
+  display: none;
+}
+
+#age-requirement {
+  margin: 5px;
+}
+
+/* Math Game */
+
+#math-facts-practice {
+  font-size: 30px;
+  margin: 0px;
+  text-align: center;
+}
+
+#math-facts-menu, #math-game-layout {
+  text-align: center;
+}
+
+#dropdown-menu {
+  border-width: 3px;
+  border-color: black;
+  margin: 25px 15px;
+}
+
+#go-button {
+  border-radius: 5px;
+  background-color: rgb(14, 162, 14);
+  color: white;
+  cursor: pointer;
+}
+
+#instructions {
+  margin-top: 140px;
+  font-size: large;
+  display: inline-block;
+  text-align: left;
+}
+
+#game-selection, #math-problem {
+  margin-top: 0px;
+  margin-bottom: 3px;
+  font-size: x-large;
+}
+
+#user-answer {
+  width: 80px;
+  height: 40px;
+  border-color: black;
+  border-width: 4px;
+  margin: 10px auto;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: fit-content;
+  margin: 0px auto;
+}
+
+.btn {
+  background-color: rgb(14, 162, 14);
+  color: white;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  font-size: x-large;
+}
+
+#clear {
+  grid-column: span 2;
+  width: 92%;
+}
+
+#score-timer {
+  font-size: large;
+  text-align: left;
+  margin: auto;
+  max-width: 150px;
+}
+
+#score, #timer {
+  float: right;
+}
+
+#math-game-layout {
+  display: none;
+}
+
+/* Times up screen */
+#times-up-screen {
+  text-align: center;
+  display: none;
+}
+
+#times-up-text {
+  color: red;
+}
+
+#final-score-text, #final-score {
+  font-size: xx-large;
+}
+
+#play-again {
+  border-radius: 5px;
+  background-color: rgb(14, 162, 14);
+  color: white;
+  cursor: pointer;
+}
